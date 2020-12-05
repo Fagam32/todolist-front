@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let API_URL = process.env.VUE_APP_BACKEND_URL
+let API_URL = process.env.VUE_APP_BACKEND_URL + 'auth/'
 
 class AuthService {
     login(user) {
