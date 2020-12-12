@@ -8,9 +8,9 @@
       />
       <form name="form" @submit.prevent="handleLogin">
         <div class="form-group">
-          <label for="username">Username</label>
+          <label for="username">Email</label>
           <input
-              v-model="user.username"
+              v-model="user.email"
               v-validate="'required'"
               type="text"
               class="form-control"
@@ -82,7 +82,7 @@ export default {
           return;
         }
 
-        if (this.user.username && this.user.password) {
+        if (this.user.email && this.user.password) {
           this.$store.dispatch('auth/login', this.user).then(
               () => {
                 this.$router.push('/todos');
