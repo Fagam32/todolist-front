@@ -126,7 +126,7 @@ label {
 }
 
 .card {
-  background-color: #f7f7f7;
+  background-color: #d95d53;
   padding: 20px 25px 30px;
   margin: 0 auto 25px;
   margin-top: 50px;
@@ -137,7 +137,6 @@ label {
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
-
 .profile-img-card {
   width: 96px;
   height: 96px;

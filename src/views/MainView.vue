@@ -1,26 +1,32 @@
 <template>
   <div class="container">
     <div class="btn-group">
-      <button class="btn btn-warning mb-3" @click="getAllTodos">Refresh</button>
-      <button class="btn btn-primary mb-3" @click="showAddModal">Add new Todo</button>
+      <button class="btn btn-ref mb-3" @click="getAllTodos">Refresh</button>
+      <button class="btn btn-warning mb-3" @click="showAddModal">Add new Todo</button>
     </div>
-    <ul>
-      <li v-for="todoItem in todoList" v-bind:key="todoItem.id">
+    <div class="container">
+    <ul >
+
+      <li v-for="todoItem in todoList" v-bind:key="todoItem.id "  >
+
         <label>
           <input type="checkbox" v-model="todoItem.isDone"
                  @click="editTodo(todoItem.id, todoItem.text, !todoItem.isDone)">
         </label>
+
         <span>
           <strong>{{ todoItem.id }}</strong>
-          <span v-if="todoItem.isDone" style="text-decoration: line-through;">{{ todoItem.text }}</span>
+          <span v-if="todoItem.isDone" style="text-decoration: line-through ;">{{ todoItem.text }}</span>
           <span v-else> {{ todoItem.text }}</span>
         </span>
-        <button class="btn btn-secondary m-1" v-on:click="showEditTodo(todoItem.id, todoItem.text, todoItem.isDone)">
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <button class="btn-warning m-1" v-on:click="showEditTodo(todoItem.id, todoItem.text, todoItem.isDone)">
           Edit
         </button>
         <button class="nm btn btn-danger m-1" v-on:click="deleteTodo(todoItem.id)"> &times;</button>
       </li>
     </ul>
+    </div>
     <b-modal
         ref="addNewTodoModal"
         centered
@@ -131,4 +137,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+.btn-ref
+{
+  background-color: #090705;
+  color:#ffc201;
+}
+
+
 </style>

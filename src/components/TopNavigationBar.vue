@@ -74,8 +74,15 @@ export default {
 
 <style scoped>
 .get {
-  color: lightcoral;
-  font-size: xx-large;
+  color: #ffc201;
+  font-size: x-large;
 }
-
+.nav-link{
+  color: #8ac9ea;
+  font-size: x-large;
+}
+.navbar-nav{
+  color:#8ac9ea;
+  font-size: x-large;
+}
 </style>

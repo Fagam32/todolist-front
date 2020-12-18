@@ -38,7 +38,7 @@
           >Password is required!</div>
         </div>
         <div class="form-group">
-          <button class="btn btn-primary btn-block" :disabled="loading">
+          <button class="btn btn-lg btn-block" :disabled="loading">
             <span v-show="loading" class="spinner-border spinner-border-sm"></span>
             <span>Login</span>
           </button>
@@ -112,9 +112,13 @@ label {
   max-width: 350px !important;
   padding: 40px 40px;
 }
-
+.btn-lg
+{
+  background-color: #090705;
+  color:#ffc201;
+}
 .card {
-  background-color: #f7f7f7;
+  background-color: #deae01;
   padding: 20px 25px 30px;
   margin: 0 auto 25px;
   margin-top: 50px;
@@ -135,4 +139,5 @@ label {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+
 </style>
